@@ -3,8 +3,9 @@ let sentencingDiv = document.querySelector('.sentencing-div');
 let juryDiv = document.querySelector('.jury-div');
 let defaultDiv = document.querySelector('.default-div')
 let navigation = document.querySelectorAll('.navigation-tab');
+
 let mediaDiv = document.querySelector('.media-div');
-console.log(mediaDiv)
+
 
 verdictDiv.style.display='none';
 sentencingDiv.style.display='none';
@@ -12,10 +13,19 @@ juryDiv.style.display= 'none';
 mediaDiv.style.display='none';
 
 
+
+
+
+
+
+
+
+
 navigation.forEach(button=>{
   button.addEventListener('click', function(e){
     if(e.target.textContent ==='Verdict'){
       verdictDiv.style.display='flex';
+     
       verdictDiv.style.animation = 'fadein 4s';
       sentencingDiv.style.display='none';
       juryDiv.style.display= 'none';
@@ -35,7 +45,7 @@ defaultDiv.style.display='none';
       juryDiv.style.animation = 'fadein 4s';
       defaultDiv.style.display='none';
       mediaDiv.style.display='none';
-    } else if(e.target.textContent ==='Media'){
+    } else if(e.target.textContent ==='Video'){
       verdictDiv.style.display='none';
       sentencingDiv.style.display='none';
       juryDiv.style.display= 'none';
@@ -45,6 +55,7 @@ defaultDiv.style.display='none';
     } else if(e.target.textContent ==='Home'){
       verdictDiv.style.display='none';
 sentencingDiv.style.display='none';
+
 juryDiv.style.display= 'none';
 mediaDiv.style.display='none';
 defaultDiv.style.display='flex';

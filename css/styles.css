@@ -2,53 +2,82 @@
     width: 1024px;
     height: 1024px;
     margin: 0 auto; 
-    font-family: Lucida Sans Typewriter;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+
 }
 
-.chauvinImg{
-    
-    width: 100%;
+
+.sentencing-div{
+  padding: .2em .5em 0 .5em;
+  background-color: white;
+  font-size: 1em;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+.imageDiv{
+height: auto;
 }
 
 
 .chauvinText{
     margin-left: 1em;
-    width: 450px;
+    width: 520px;
+    font-size: 1.8em;
     
 }
+
+
 
 .default-div{
     display: flex;
 }
 
-
+.title{
+  font-size:1.2em;
+}
 
 
 .verdict-div{
  
  display: flex;
  background-color: white;
- width:1000px;
- height: 522px;
+height: 408px;
  margin: 0 auto;  
  border-radius: 5px 5px 5px 5px;
-
+position: relative;
 }
+
+
 .verdict{
     background-color: red;
     display: inline-block;
     color: white;
     padding: .2em;
+    position: absolute;
+    bottom: 0;
+   
   
 }
 
 .charges{
     border-right: solid gray 1px;
-    margin-left: .3em;
+ width: 272px;
+ height: 300px;
+   height: auto;
+   margin-left: .5em;
 }
 
-.charges:nth-child(3) {
-    border: none;
+.chargeName{
+  margin-bottom: 2px;
+}
+
+  .chargeName{
+    font-size:1.3em;
+  }
+
+  .charges:nth-child(4) {
+  border-right: none;
   }
 
 
@@ -67,11 +96,14 @@
     font-size: 1em;
   }
 
-  .sentencing-text{
-      background-color:white;
-      width: 1000px;
-      height: 500px;
-      padding:.5em;
+.img-caption{
+  font-size: 10px;
+}
+
+  .imgDiv{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
   }
   
   #tabs h3 {
@@ -103,7 +135,7 @@
     border-radius: 0 5px 5px 5px;
     box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
     width: 1024px;
-    height: 576px;
+    height: 600px;
   }
 
 
