@@ -1,0 +1,119 @@
+.container{
+    width: 1024px;
+    height: 1024px;
+    margin: 0 auto; 
+    font-family: Lucida Sans Typewriter;
+}
+
+.chauvinImg{
+    
+    width: 100%;
+}
+
+
+.chauvinText{
+    margin-left: 1em;
+    width: 450px;
+    
+}
+
+.default-div{
+    display: flex;
+}
+
+
+
+
+.verdict-div{
+ 
+ display: flex;
+ background-color: white;
+ width:1000px;
+ height: 522px;
+ margin: 0 auto;  
+ border-radius: 5px 5px 5px 5px;
+
+}
+.verdict{
+    background-color: red;
+    display: inline-block;
+    color: white;
+    padding: .2em;
+  
+}
+
+.charges{
+    border-right: solid gray 1px;
+    margin-left: .3em;
+}
+
+.charges:nth-child(3) {
+    border: none;
+  }
+
+
+
+#tabs {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #tabs h3 {
+    float: left;
+    margin: 0 .5em 0 0;
+    font-size: 1em;
+  }
+
+  .sentencing-text{
+      background-color:white;
+      width: 1000px;
+      height: 500px;
+      padding:.5em;
+  }
+  
+  #tabs h3 {
+    position: relative;
+    
+    background-color: rgb(231,201,169);;
+    padding: .7em 3.5em;
+    float: left;
+    text-decoration: none;
+    color: #444;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: 5px 0 0 0;
+    box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  }
+  
+  #tabs h3:hover,
+  #tabs a:hover::after,
+  #tabs a:focus,
+  #tabs a:focus::after {
+    background-color: red;
+  }
+ 
+  #content {
+    background-color: rgb(231,201,169);
+    padding: 2em;
+  
+    position: relative;
+    z-index: 2;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    width: 1024px;
+    height: 576px;
+  }
+
+
+  @keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+   
+    100%{
+        opacity: 1;
+    }
+   
+   }
